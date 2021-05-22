@@ -1,10 +1,10 @@
 <h1 align="center">TODO APP  👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/YemreAybey/interview-todo#readme" target="_blank">
+  <a href="https://github.com/omertastan/TodoFE#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
-  <a href="https://github.com/YemreAybey/interview-todo/commit-activity" target="_blank">
+  <a href="https://github.com/omertastan/TodoFE/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
 </p>
@@ -17,7 +17,7 @@ A simple todo app. Easy to use with a nice UI.
 
 ## Backend
 
-For the backend, I have used nodeJS and expressJS. You can see the node-api [on this link](https://github.com/YemreAybey/todo-api)
+For the backend, I have used nodeJS and expressJS. You can see the node-api [on this link](https://github.com/omertastan/todoBE)
 
 ## Built With
 
@@ -27,14 +27,14 @@ For the backend, I have used nodeJS and expressJS. You can see the node-api [on 
 - Styled-Components
 - Rebass
 
-### ✨ [Live Demo](https://emre-todo.herokuapp.com)
+### ✨ [Live Demo]()
 
 ## Usage
 
 > Clone the repository to your local machine
 
 ```sh
-$ git clone https://github.com/YemreAybey/interview-todo.git
+$ git clone https://github.com/omertastan/TodoFE.git
 ```
 
 > cd into the directory, install dependencies and start
@@ -49,16 +49,15 @@ $ yarn start or npm start
 
 ## Authors
 
-👤 **Y.Emre AYBEY**
+👤 **ÖMER TAŞTAN**
 
-- Github: [@YemreAybey](https://github.com/YemreAybey)
-- Twitter: [@YunusAybey](https://twitter.com/YunusAybey)
+- Github: [@omertastan](https://github.com/omertastan)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/YemreAybey/interview-todo/issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/omertastan/TodoFE/issues).
 
-1. Fork it (https://github.com/YemreAybey/interview-todo.git/fork)
+1. Fork it (https://github.com/omertastan/TodoFE.git/fork)
 2. Create your working branch (git checkout -b [choose-a-name])
 3. Commit your changes (git commit -am 'what this commit will fix/add/improve')
 4. Push to the branch (git push origin [chosen-name])
