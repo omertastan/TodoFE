@@ -10,13 +10,13 @@ export const PrivateRoute = ({ children }) => {
   const { push } = useHistory()
   const userData = getLocalStorage('user')
   const { token } = userData ?? {}
-  console.log(userData, isAuthenticated)
   useEffect(() => {
     if (userData) {
       dispatch(setLoginData({ type: SET_LOGIN_DATA, data: token }))
     } else {
       push('/login')
     }
+    // eslint-disable-next-line
   }, [dispatch, isAuthenticated])
 
   return isAuthenticated && children

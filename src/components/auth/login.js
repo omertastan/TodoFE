@@ -35,15 +35,15 @@ export default function Login() {
         alignItems="center"
         justifyContent="center"
       >
-        <Box width={1}>
+        <Box width={1 / 2}>
           <Formik
             onSubmit={onSubmit}
             initialValues={initialValues}
             validationSchema={generalValidationSchema}
           >
             {({ errors, touched, handleSubmit }) => (
-              <Form>
-                <Box width={1} mb="10px">
+              <Form justifyContent="center">
+                <Box width={1}>
                   <FormikField
                     hideTitle={false}
                     errors={errors}
@@ -66,15 +66,22 @@ export default function Login() {
                     placeholder="Enter your password..."
                   />
                 </Box>
-                <Flex justifyContent="center" mt={[30]} minWidth={[100, 248]}>
-                  <Button
-                    type="button"
-                    variant="primary"
-                    onClick={handleSubmit}
-                  >
-                    Login
-                  </Button>
-                  <Link to={'/signup'}>Sign up</Link>
+                <Flex justifyContent="center" mt={[30]} flexWrap="wrap" mx={-2}>
+                  <Box px={2} py={2} width={1 / 2}>
+                    <Button
+                      pr={10}
+                      type="button"
+                      variant="primary"
+                      onClick={handleSubmit}
+                    >
+                      Login
+                    </Button>
+                  </Box>
+                  <Box px={2} py={2} width={1 / 2}>
+                    <Button type="button" variant="primary">
+                      <Link to={'/signup'}>Sign up</Link>
+                    </Button>
+                  </Box>
                 </Flex>
               </Form>
             )}

@@ -9,6 +9,7 @@ const App = () => {
   const history = useHistory()
   useEffect(() => {
     history.push('/todolist')
+    // eslint-disable-next-line
   }, [])
   return (
     <>
