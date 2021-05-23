@@ -27,7 +27,7 @@ For the backend, I have used nodeJS and expressJS. You can see the node-api [on 
 - Styled-Components
 - Rebass
 
-### ✨ [Live Demo](https://objective-yonath-06337a.netlify.app/login)
+### ✨ [Live Demo](https://objective-yonath-06337a.netlify.app)
 
 ## Usage
 
