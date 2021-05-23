@@ -28,7 +28,7 @@ export default function Login() {
   }
 
   return (
-    <Flex flexDirection="column" alignItems="center" justifyContent="center">
+    <Flex flexDirection="column" alignItems="center" justifyContent={'center'}>
       <Flex
         width={['95%', '70%', '40%']}
         flexDirection="column"
@@ -42,10 +42,10 @@ export default function Login() {
             validationSchema={generalValidationSchema}
           >
             {({ errors, touched, handleSubmit }) => (
-              <Form justifyContent="center">
+              <Form justifyContent={'center'}>
                 <Box width={1}>
                   <FormikField
-                    hideTitle={false}
+                    hideTitle={true}
                     errors={errors}
                     touched={touched}
                     name="email"
@@ -66,7 +66,12 @@ export default function Login() {
                     placeholder="Enter your password..."
                   />
                 </Box>
-                <Flex justifyContent="center" mt={[30]} flexWrap="wrap" mx={-2}>
+                <Flex
+                  justifyContent={'center'}
+                  mt={[30]}
+                  flexWrap="wrap"
+                  mx={-2}
+                >
                   <Box px={2} py={2} width={1 / 2}>
                     <Button
                       pr={10}

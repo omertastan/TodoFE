@@ -27,8 +27,8 @@ export default function SignUp() {
   }
 
   return (
-    <Flex flexDirection="column" alignItems="center" justifyContent="center">
-      <Box width={1}>
+    <Flex flexDirection="column" alignItems="center" justifyContent={'center'}>
+      <Box width={1 / 2} ml={300}>
         <Formik
           onSubmit={onSubmit}
           initialValues={initialValues}
@@ -36,7 +36,7 @@ export default function SignUp() {
         >
           {({ errors, touched, handleSubmit }) => (
             <Form>
-              <Box width={1}>
+              <Box width={1 / 2}>
                 <FormikField
                   hideTitle={false}
                   errors={errors}
@@ -47,7 +47,7 @@ export default function SignUp() {
                   placeholder="Enter your email..."
                 />
               </Box>
-              <Box width={1}>
+              <Box width={1 / 2}>
                 <FormikField
                   type="password"
                   hideTitle={false}
@@ -59,7 +59,12 @@ export default function SignUp() {
                   placeholder="Enter your password..."
                 />
               </Box>
-              <Flex justifyContent="center" mt={[30]} minWidth={[100, 248]}>
+              <Flex
+                justifyContent={'center'}
+                mr={400}
+                mt={[30]}
+                minWidth={[100, 248]}
+              >
                 <Button type="button" variant="primary" onClick={handleSubmit}>
                   SignUp
                 </Button>

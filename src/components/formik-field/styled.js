@@ -1,22 +1,23 @@
-import styled from "styled-components";
-import { Field } from "formik";
+import styled from 'styled-components'
+import { Field } from 'formik'
 
 export const FormFieldContainer = styled.div((props) => ({
-  display: "flex",
-  flexDirection: "column",
-  width: "100%",
-  color: `1px solid ${props.theme.colors.text}`,
-}));
+  display: 'flex',
+  flexDirection: 'column',
+  width: '100%',
+  background: 'transparent',
+}))
 
 export const FormField = styled(Field)((props) => ({
-  border: "none",
+  border: 'none',
   borderBottom: `1px solid ${props.bordercolor}`,
-  padding: "10px 0",
+  padding: '10px 0',
+  backgroundColor: 'transparent !important',
 
-  ":focus": {
-    outline: "none",
+  ':focus': {
+    outline: 'none',
   },
-  ":-internal-autofill-selected": {
-    backgroundColor: "transparent !important",
+  ':-internal-autofill-selected': {
+    backgroundColor: 'transparent !important',
   },
-}));
+}))
